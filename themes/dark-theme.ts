@@ -1,5 +1,5 @@
 import { createTheme } from '@mui/material';
-import { red } from '@mui/material/colors';
+import { pink, red } from '@mui/material/colors';
 
 export const darkTheme = createTheme({
     palette: {
@@ -9,12 +9,13 @@ export const darkTheme = createTheme({
         },
         error: {
             main: red.A400,
+            // main: pink[700],
         },
     },
     components: {
         MuiAppBar: {
             defaultProps: {
-                elevation:0
+                elevation: 0,
             },
             styleOverrides: {
                 root: {
